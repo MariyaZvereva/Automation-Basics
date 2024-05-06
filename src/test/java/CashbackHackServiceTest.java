@@ -22,6 +22,15 @@ public class CashbackHackServiceTest {
         Assert.assertEquals (result, 1000);
 
     }
+
+    @Test
+    public void calculationCashbackTest2 (){
+        CashbackHackService cashbackHackService = new CashbackHackService();
+        int result = cashbackHackService.remain(1000);
+
+        Assert.assertEquals (result, 100);
+
+    }
 }
 
 
